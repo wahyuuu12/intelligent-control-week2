@@ -1,0 +1,35 @@
+ANALISIS DAN DISKUSI WEEK 2
+Nama		: Wahyu Ramadhan A
+NIM		: 2243080
+Kelas		: TKA-6B
+
+Analisis
+1. Bagaimana performa model dalam mendeteksi warna?
+Jawab : 
+Performa model dalam mendeteksi warna bergantung pada kualitas data dan variasi data pada dataset.  Dengan menggunakan model K-Nearest Neighbors (KNN) pada kode tersebut menggunakan fitur RGB untuk melakukan klasifikasi warna. Jika dataset mencakup variasi warna yang luas dan telah diproses dengan baik, KNN dapat memberikan hasil yang akurat. KNN sensitif terhadap noise dan pencahayaan yang tidak stabil, sehingga teknik seperti normalisasi warna, reduksi dimensi dapat membantu meningkatkan performa dalam mendeteksi warna.Jika dataset mencakup berbagai warna secara merata, model akan memiliki akurasi yang baik dalam mendeteksi warna.  
+
+2. Bagaimana perbedaan akurasi jika jumlah dataset ditambah?
+Jawab : 
+Menambahkan jumlah dataset umumnya meningkatkan akurasi model, terutama jika dataset yang lebih besar, beragam, banyak dan detail maka dapat mengklasifikasikan warna dengan baik, meningkatkan akurasi mendekteksi warna, mengenali pola warna serta mengurangi kemungkinan kesalahan akibat overfitting. Namun jika dataset bertambah terlalu besar tanpa optimalisasi, maka lebih lambat karena harus menghitung jarak ke semua titik data saat melakukan prediksi.
+
+3. Bagaimana cara meningkatkan kinerja model klasifikasi?
+Jawab : 
+Cara meningkatkan kinerja model klasifikasi dapat dilakukan dengan  hyperparameter tuning, seperti menguji nilai K pada KNN untuk hasil optimal. Jika KNN kurang akurat, bisa digunakan algoritma model lain seperti Support Vector Machine (SVM) atau Neural Networks yang lebih akurat. Lalu Feature engineering, untuk  mengonversi warna dari BGR ke HSV untuk pemisahan warna yang lebih baik. Selain itu, cross-validation membantu menghindari overfitting.
+
+
+Diskusi
+1. Apa keuntungan Machine Learning dibandingkan metode berbasis aturan (rule-based)?
+Jawab : 
+Keuntungan Machine Learning (ML) dibandingkan metode berbasis rull-based yaitu ML dapat menangani data yang kompleks, lebih fleksibel karena dapat belajar secara otomatis dan beradaptasi dengan perubahan data tanpa aturan yang manual, dan machine learning dapat menemukan pola tersembunyi yang sulit dideteksi dengan aturan tetap. Sedangkan rule based  hanya bekerja dengan aturan yang telah ditentukan secara eksplisit, memerlukan pembaruan data secara manual, dan tidak dapat menangani data yang kompleks. 
+
+2. Bagaimana ML dapat diintegrasikan lebih lanjut dalam sistem kendali?
+Jawab : 
+Machine Learning (ML) dapat diintegrasikan lebih lanjut dalam sistem kendali dengan berbagai cara untuk meningkatkan otomatisasi, efisiensi, dan adaptasi terhadap perubahan lingkungan. Dalam optimasi untuk menyesuaikan parameter secara real-time berdasarkan pola, dalam alam deteksi anomali, ML dapat mengidentifikasi pola operasi yang tidak normal dan memberikan peringatan dini untuk mencegah kesalahan sistem dan dalam predictive maintenance ML menganalisis data sensor untuk memprediksi kegagalan komponen sebelum terjadi kerusakan. 
+
+3. Apa saja tantangan dalam penerapan ML dalam sistem real-time?
+Jawab : 
+- Memerlukan pemantauan terus-menerus untuk mendeteksi dan memperbaiki kesalahan dengan cepat.
+- Keandalan sistem harus tetap stabil dan akurat dalam berbagai kondisi operasional.
+- Memerlukan data yang besar dan penyimpanan yang cukup besar agar data dapat diproses secara cepat
+
+
